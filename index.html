@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- jquery cdn -->
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <title>Document</title>
+</head>
+
+<style>
+   body{
+      background-color: rgba(0, 0, 0, 0.753);
+   }
+</style>
+<body>
+   <script>
+      const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://calorieninjas.p.rapidapi.com/v1/nutrition?query=potato",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "calorieninjas.p.rapidapi.com",
+		"x-rapidapi-key": "ed7971bb0amshba26f8c85860a90p1713b7jsna7276525d02a"
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+   </script>
+</body>
+</html>

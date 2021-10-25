@@ -1,0 +1,21 @@
+api documentation-
+https://calorieninjas.com/api
+
+
+api code snippet - 
+https://rapidapi.com/calorieninjas/api/calorieninjas/
+
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+Public food api's -
+https://rapidapi.com/collection/food-apis
+
+
+
+
+Reference (design)
+https://www.webmd.com/diet/healthtool-food-calorie-counter
+home page
+https://www.myfitnesspal.com/
+
