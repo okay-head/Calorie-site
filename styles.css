@@ -1,27 +1,190 @@
-*{
+* {
    box-sizing: border-box;
 }
+body,
+html {
+   overflow-x: hidden;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   /* display: none; <- Crashes Chrome on hover */
+   -webkit-appearance: none;
+   margin: 0;
+}
+input[type="decimal"] {
+   -moz-appearance: textfield; /* Firefox */
+}
 
-/* html,body{
+.calculator-container-container {
+   padding-left: 30em !important;
+   position: relative;
+   background-color: cadetblue;
+   /* width: 80%; */
+   background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80")
+      no-repeat center center;
+   background-size: cover;
+}
+/* .calculator-container-container::after {
+   background: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80") no-repeat -20% center;
+  
 
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   content: '';
+   z-index: -200;
 } */
 
-.calculator-container{
+/* utility */
+.font-italic{
+   font-style: italic!important;
+}
+.slide {
+   transform: translateY(-90%);
+   opacity: 0;
+}
+
+/* classes */
+.card {
+   /* box-shadow: 0 0 1px #00000070; */
+   box-shadow: 0 0 1px #28721e70;
+}
+@media screen and (min-width: 980px) {
+   .card {
+      width: 50%;
+   }
+}
+
+.card-text{
+   font-size: 1.1em;
+}
+.calculator-container {
    width: 80%;
    margin: 0 auto;
    max-width: 400px;
    /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.233); */
 }
 .form-control:focus,
-.form-select:focus{
+.form-select:focus {
    border: 1px solid rgba(0, 0, 0, 0.746);
    box-shadow: none;
+}
+.btn-primary {
+   outline: none;
+   border: none;
 }
 .btn-primary:focus {
    color: #fff;
    /* background-color:rgba(0, 0, 0, 0.575) ; */
-   border-color: rgba(var(--bs-success-rgb))!important;
+   border-color: rgba(var(--bs-success-rgb)) !important;
    /* box-shadow: none; */
    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.87) !important;
 }
+a:focus {
+   box-shadow: none !important;
+}
+.results {
+   margin: 5em auto;
+   max-width: 80%;
+}
+
+#cal-result-value {
+   transition: 0.75s ease all;
+}
+#wt-result-value {
+   transition: 1.3s ease all;
+}
+#reEnter {
+   display: inline-block;
+   width: 25%;
+   position: relative;
+   right: 9%;
+   /* margin: 4em auto; */
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+}
+#result-img img{
+   height: 38px;
+}
+#result-img{
+   position: absolute;
+	bottom: 23%;
+	right: 35%;
+}
+.button-container{
+   width: 60%;
+   margin: 3em auto;
+}
+.button-container a{
+      min-width: 280px;
+}
+#dietChart{
+   position: relative;
+   left: 12%;
+}
+.broccoli {
+   width: 70%;
+}
+.card-title {
+   font-size: calc(2rem + 0.9vw);
+}
+.sub-txt {
+   font-size: 1.5rem;
+}
+
+/* page1  index.html*/
+.container-fluid {
+   padding: 0;
+}
+
+main {
+   background: url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80') no-repeat center center;
+   background-size: cover;
+   min-height: 100vh;
+}
+.navbar{
+   width: max-content;
+   border-radius: 30px;
+   /* background-color: #4baf50!important; */
+}
+.navbar a{
+   color: white!important;
+   /* background-color: #92C64E!important; */
+   padding-left:1.6em!important;
+   padding-right:1.6em!important;
+}
+.intro{
+   display: grid;
+   place-items: center;
+   height: 80vh;
+}
+.cta{
+   /* font-weight: bold; */
+   display: inline-block;
+   padding: 0.8em 1.6em;
+   color: white;
+   background-color:#4baf50 ;
+   /* color: #4baf50; */
+   /* border:2px solid #4baf50; */
+   /* background-color:white ; */
+   text-decoration: none;
+   border-radius: 30px;
+   font-size: 1.2rem;
+}
+.cta:hover{
+   background-color:#3d9741ea ;
+   color: white;
+   /* font-weight: 900; */
+   /* color: #4baf50; 
+    border:2px solid #4baf50; 
+    background-color:white ; */
+   
+}
+a:hover{
+   color: initial;
+}
+
+/* wt gain */
 

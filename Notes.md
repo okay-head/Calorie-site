@@ -24,10 +24,18 @@ Generally, females weigh less than males even though they naturally have a highe
 _B. J. Devine Formula (ideal wt)_ 
 Male:	   50.0 kg + 2.3 kg per inch over 5 feet
 Female:	45.5 kg + 2.3 kg per inch over 5 feet
+Male:	   50.0 kg + 0.91 kg per cm over 152.4cm
+Female:	45.5 kg + 0.91 kg per cm over 152.4cm
 
 Output = current wt / ideal wt + current bmi / ideal bmi 
 OR
 just wt gain/ loss
+
+For patients under 5 feet, one commonly-used modification is to subtract 2-5 lbs for each inch below 60 inches 
+or 
+subtract 1.36kg for every 2.54cm
+subtract 0.54kg for every 1cm
+
 
 *use the Devine formula for Men, and use the Robinson formula for Women.*
 
