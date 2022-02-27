@@ -24,6 +24,7 @@ Generally, females weigh less than males even though they naturally have a highe
 _B. J. Devine Formula (ideal wt)_ 
 Male:	   50.0 kg + 2.3 kg per inch over 5 feet
 Female:	45.5 kg + 2.3 kg per inch over 5 feet
+
 Male:	   50.0 kg + 0.91 kg per cm over 152.4cm
 Female:	45.5 kg + 0.91 kg per cm over 152.4cm
 
